@@ -1,16 +1,8 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "The Problem of Unbalanced Data"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+When using the ENAHO database and specifically taking as a predictor variable question 521c which contains the following question "Do you want to or have you done anything to change your current job?", it can be noted that there is a very large proportion of observations (95%) that answer in the negative and on the contrary only a small proportion of observations (5%) answer in the affirmative. This generates the problem of unbalanced data which usually refers to a classification problem in which classes are not equally represented. One example of the unbalanced data problem is the mammography data, where 10923 observations are considered healthy and 260 observations considered unhealthy (He 2013). This problem results in the machine learning algorithm having only good performance identifying the majority class and ignoring the minority class, this is reflected in one of the metrics used to determine the performance of a classification model, this metric is the Accuracy which is close to the interval between 90% and 100%. The problem arises when the algorithm classifies the minority class as if it were the majority class, however, in general, the class of interest of the researcher is the minority class. Taking this into consideration, many ways have been developed to solve the problem of unbalanced data. One way to address the problem is to oversample the minority class. This simpler approach, consists of duplicating the examples of the minority class, although these examples do not add any new information to the model. Instead, new examples can be synthesized from existing ones. This is a type of data augmentation for the minority class and is called Synthetic Minority Oversampling Technique, or SMOTE for short.
