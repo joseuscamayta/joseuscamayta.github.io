@@ -9,4 +9,4 @@ date: 2020-12-01
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
-El documento de investigación tendrá como propósito calcular los multiplicadores de la inversión pública y privada sobre el PBI, para el caso peruano. Para lograr ello, se hará uso del Modelo Structural Var.
+El documento de investigación tiene como propósito calcular los multiplicadores de la inversión pública y privada sobre el PBI, para el caso peruano. Para lograr ello, se hará uso del Modelo Structural Var.
